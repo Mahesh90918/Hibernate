@@ -12,6 +12,7 @@ public class SessionUtil {
 
 	static {
 		Configuration configuration = new Configuration();
+//		configuration.get
 		configuration.configure("/hibernate.conf.xml");
 		ServiceRegistryBuilder registry = new ServiceRegistryBuilder();
 		registry.applySettings(configuration.getProperties());
