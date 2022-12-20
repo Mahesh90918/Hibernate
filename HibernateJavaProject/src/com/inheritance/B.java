@@ -6,8 +6,12 @@ public class B extends A{
 		
 	}
 
-	public B(int i) {
+	protected B(int i) {
 		this();
 		System.out.println(i);
+	}@Override
+	public void mahesh() {
+		// TODO Auto-generated method stub
+		super.mahesh();
 	}
 }
