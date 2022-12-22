@@ -28,14 +28,14 @@ public class Employee {
 	@Column(name = "E_SAL")
 	double esal;
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinColumn(name = "aid")
+	@JoinColumn(name = "maheshAdd")
 	Address address;
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinColumn(name = "did")
+	@JoinColumn(name = "maheshDept")
 	Department department;
 	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinTable(name = "Employee_Project", joinColumns = { @JoinColumn(name = "eid") }, inverseJoinColumns = {
-			@JoinColumn(name = "pid") })
+	@JoinTable(name = "Employee_Project", joinColumns = { @JoinColumn(name = "mahesheid") }, inverseJoinColumns = {
+			@JoinColumn(name = "maheshpid") })
 	List<Project> project;
 
 	public Employee() {
