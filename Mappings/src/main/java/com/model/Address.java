@@ -21,10 +21,11 @@ public class Address {
 	long pincode;
 	@OneToOne(mappedBy = "address")
 	Employee employee;
+
 	public Address() {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Address(int aid, String location, long pincode, Employee employee) {
 		super();
 		this.aid = aid;
@@ -36,30 +37,38 @@ public class Address {
 	public int getAid() {
 		return aid;
 	}
+
 	public void setAid(int aid) {
 		this.aid = aid;
 	}
+
 	public String getLocation() {
 		return location;
 	}
+
 	public void setLocation(String location) {
 		this.location = location;
 	}
+
 	public long getPincode() {
 		return pincode;
 	}
+
 	public void setPincode(long pincode) {
 		this.pincode = pincode;
 	}
+
 	public Employee getEmployee() {
 		return employee;
 	}
+
 	public void setEmployee(Employee employee) {
 		this.employee = employee;
 	}
+
 	@Override
 	public String toString() {
-		return "Address [aid=" + aid + ", location=" + location + ", pincode=" + pincode + ", employee=" + employee
-				+ "]";
+		return "Address [aid=" + aid + ", location=" + location + ", pincode=" + pincode + "]";
 	}
+
 }

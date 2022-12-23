@@ -59,7 +59,7 @@ public class Department {
 
 	@Override
 	public String toString() {
-		return "Department [did=" + did + ", dname=" + dname + ", employee=" + employee + "]";
+		return "Department [did=" + did + ", dname=" + dname + "]";
 	}
 
 }
